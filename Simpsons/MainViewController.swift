@@ -9,16 +9,15 @@ import UIKit
 
 class MainViewController: UICollectionViewController {
     
+    // MARK: - Private Properties
+    private let url = "https://thesimpsonsquoteapi.glitch.me/quotes?count=4"
+    private var quote: Quote?
+    var quotes: [Quote] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData(with: url)
     }
-    
-    // MARK: - Private Properties
-    private let url = "https://thesimpsonsquoteapi.glitch.me/quotes?count=4"
-    private var quote: Quote?
-    private var quotes: [Quote] = []
-    
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

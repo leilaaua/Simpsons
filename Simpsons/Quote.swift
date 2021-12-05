@@ -8,6 +8,6 @@
 struct Quote: Decodable {
     var quote: String?
     var character: String?
-    var imageUrl: String?
+    var image: String?
     var characterDirection: String?
 }

@@ -13,7 +13,7 @@ class PhotoCell: UICollectionViewCell {
     
     func configure(with quotes: Quote?) {
         DispatchQueue.global().async {
-            guard let url = quotes?.imageUrl else { return }
+            guard let url = quotes?.image else { return }
             guard let imageURl = URL(string: url) else { return }
             guard let imageData = try? Data(contentsOf: imageURl) else { return }
             DispatchQueue.main.async {
