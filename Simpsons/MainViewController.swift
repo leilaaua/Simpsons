@@ -10,7 +10,7 @@ import UIKit
 class MainViewController: UICollectionViewController {
     
     // MARK: - Private Properties
-    private let url = "https://thesimpsonsquoteapi.glitch.me/quotes?count=4"
+    private let url = "https://thesimpsonsquoteapi.glitch.me/quotes?count=10"
     private var quote: Quote?
     var quotes: [Quote] = []
     
@@ -29,10 +29,6 @@ class MainViewController: UICollectionViewController {
             self.quotes = quotes
             self.collectionView.reloadData()
         }
-    }
-    
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        1
     }
     
     // MARK: UICollectionViewDataSource
