@@ -13,19 +13,19 @@ class NetworkManager {
     
     private init() {}
     
-    func fetchData(from url: String?, with completion: @escaping(Quote) -> Void) {
+    func fetchData(from url: String?, with completion: @escaping([Quote]) -> Void) {
         guard let url = URL(string: url ?? "") else { return }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
-                print(error?.localizedDescription ?? "No error description")
+                print(error?.localizedDescription ?? "No error description") 
                 return
             }
             
             do {
-                let quote = try JSONDecoder().decode(Quote.self, from: data)
+                let quotes = try JSONDecoder().decode([Quote].self, from: data)
                 DispatchQueue.main.async {
-                    completion(quote)
+                    completion(quotes)
                 }
                 
             } catch let error {

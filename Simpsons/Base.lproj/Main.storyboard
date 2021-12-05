@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S2X-Od-egS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vJa-Rf-A1g">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -8,72 +8,72 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sipmsons-->
-        <scene sceneID="2ZG-lW-Thh">
+        <!--Simpsons-->
+        <scene sceneID="yzL-5k-Ls4">
             <objects>
-                <collectionViewController id="PVm-sc-FXa" customClass="MainViewController" customModule="Simpsons" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="zR4-Vl-igc">
+                <collectionViewController id="FKG-WV-YsN" customClass="MainViewController" customModule="Simpsons" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="XbW-No-YTy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fhP-QN-g9m">
-                            <size key="itemSize" width="100" height="100"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H1f-l3-vDJ">
+                            <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="GaA-si-RzI" customClass="PhotoCell" customModule="Simpsons" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="wgq-wL-e4F" customClass="PhotoCell" customModule="Simpsons" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bLs-Q0-Bgt">
-                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0gV-JQ-1MJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YEn-F9-qrd">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gZA-7h-o8Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="YEn-F9-qrd" firstAttribute="top" secondItem="bLs-Q0-Bgt" secondAttribute="top" id="EJI-oD-pHK"/>
-                                        <constraint firstAttribute="bottom" secondItem="YEn-F9-qrd" secondAttribute="bottom" id="MT1-Ai-BaO"/>
-                                        <constraint firstItem="YEn-F9-qrd" firstAttribute="leading" secondItem="bLs-Q0-Bgt" secondAttribute="leading" id="tvJ-8k-CiL"/>
-                                        <constraint firstAttribute="trailing" secondItem="YEn-F9-qrd" secondAttribute="trailing" id="y0x-bV-REQ"/>
+                                        <constraint firstItem="gZA-7h-o8Y" firstAttribute="leading" secondItem="0gV-JQ-1MJ" secondAttribute="leading" id="KLT-4i-kvZ"/>
+                                        <constraint firstItem="gZA-7h-o8Y" firstAttribute="top" secondItem="0gV-JQ-1MJ" secondAttribute="top" id="R0p-Jc-w4q"/>
+                                        <constraint firstAttribute="trailing" secondItem="gZA-7h-o8Y" secondAttribute="trailing" id="Wd5-cb-YG2"/>
+                                        <constraint firstAttribute="bottom" secondItem="gZA-7h-o8Y" secondAttribute="bottom" id="fxO-JM-fLP"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
-                                    <outlet property="imageView" destination="YEn-F9-qrd" id="aiN-KR-svG"/>
+                                    <outlet property="imageView" destination="gZA-7h-o8Y" id="Y7g-eb-XrS"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="PVm-sc-FXa" id="Irk-zF-dm6"/>
-                            <outlet property="delegate" destination="PVm-sc-FXa" id="7Fe-wn-txO"/>
+                            <outlet property="dataSource" destination="FKG-WV-YsN" id="Bmg-o7-20C"/>
+                            <outlet property="delegate" destination="FKG-WV-YsN" id="aae-Qh-RgK"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Sipmsons" id="rBY-Pf-wkl"/>
+                    <navigationItem key="navigationItem" title="Simpsons" id="WP3-iC-zpR"/>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Utu-wF-diL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZh-iz-euh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="773.60000000000002" y="17.541229385307346"/>
+            <point key="canvasLocation" x="597.60000000000002" y="-141.67916041979012"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="C9y-SO-Ch3">
+        <scene sceneID="64d-jq-oYR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S2X-Od-egS" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vJa-Rf-A1g" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Ga8-tU-e4t">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="NxT-8x-vy0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="PVm-sc-FXa" kind="relationship" relationship="rootViewController" id="f0d-j9-zvO"/>
+                        <segue destination="FKG-WV-YsN" kind="relationship" relationship="rootViewController" id="eeC-Rl-dSm"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="36b-h1-ucr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vvy-xE-ypm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="17.541229385307346"/>
+            <point key="canvasLocation" x="-215.19999999999999" y="-140.77961019490255"/>
         </scene>
     </scenes>
     <resources>

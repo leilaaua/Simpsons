@@ -5,11 +5,9 @@
 //  Created by leila leila on 30/11/2021.
 //
 
-import Foundation
-
 struct Quote: Decodable {
     var quote: String?
     var character: String?
-    var image: String?
+    var imageUrl: String?
     var characterDirection: String?
 }
