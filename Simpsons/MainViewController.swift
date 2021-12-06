@@ -12,7 +12,8 @@ class MainViewController: UICollectionViewController {
     // MARK: - Private Properties
     private let url = "https://thesimpsonsquoteapi.glitch.me/quotes?count=10"
     private var quote: Quote?
-    var quotes: [Quote] = []
+    private var quotes: [Quote] = []
+    private let spacing: CGFloat = 20
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,13 @@ class MainViewController: UICollectionViewController {
             self.collectionView.reloadData()
         }
     }
+    
+//    private func sortedQuotes(with quotes: [Quote]) -> [Quote] {
+//
+//        var quotes: [Quote] = []
+//        var index = 0
+//
+//        }
     
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -50,3 +58,27 @@ class MainViewController: UICollectionViewController {
      
 }
 
+extension MainViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let itemPerRow: CGFloat = 2
+        let paddingWitdth = 20 * (itemPerRow + 1)
+        let availableWidth = collectionView.frame.width - paddingWitdth
+        let widthPerItem = availableWidth / itemPerRow
+        
+        return CGSize(width: widthPerItem, height: widthPerItem)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        spacing
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        spacing
+    }
+    
+}
