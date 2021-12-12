@@ -46,7 +46,7 @@
 		72D9371D2756454700617C48 = {
 			isa = PBXGroup;
 			children = (
-				72D937282756454700617C48 /* Simpsons */,
+				72D937282756454700617C48 /* RickAndMorty */,
 				72D937272756454700617C48 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,7 +59,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		72D937282756454700617C48 /* Simpsons */ = {
+		72D937282756454700617C48 /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
 				72D937292756454700617C48 /* AppDelegate.swift */,
@@ -73,7 +73,7 @@
 				72D937342756455100617C48 /* LaunchScreen.storyboard */,
 				72D937372756455100617C48 /* Info.plist */,
 			);
-			path = Simpsons;
+			path = RickAndMorty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
