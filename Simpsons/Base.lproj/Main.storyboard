@@ -8,9 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Simpsons-->
+        <!--Rick And Morty-->
         <scene sceneID="yzL-5k-Ls4">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZh-iz-euh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <collectionViewController id="FKG-WV-YsN" customClass="MainViewController" customModule="Simpsons" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="XbW-No-YTy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -41,25 +42,35 @@
                                         <constraint firstAttribute="bottom" secondItem="gZA-7h-o8Y" secondAttribute="bottom" id="fxO-JM-fLP"/>
                                     </constraints>
                                 </collectionViewCellContentView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="imageView" destination="gZA-7h-o8Y" id="Y7g-eb-XrS"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="FKG-WV-YsN" id="Bmg-o7-20C"/>
                             <outlet property="delegate" destination="FKG-WV-YsN" id="aae-Qh-RgK"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Simpsons" id="WP3-iC-zpR"/>
+                    <navigationItem key="navigationItem" title="Rick And Morty" id="WP3-iC-zpR"/>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BZh-iz-euh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="597.60000000000002" y="-141.67916041979012"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="64d-jq-oYR">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vvy-xE-ypm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vJa-Rf-A1g" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="NxT-8x-vy0">
@@ -71,7 +82,6 @@
                         <segue destination="FKG-WV-YsN" kind="relationship" relationship="rootViewController" id="eeC-Rl-dSm"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vvy-xE-ypm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-215.19999999999999" y="-140.77961019490255"/>
         </scene>

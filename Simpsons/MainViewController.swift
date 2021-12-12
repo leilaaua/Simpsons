@@ -10,14 +10,13 @@ import UIKit
 class MainViewController: UICollectionViewController {
     
     // MARK: - Private Properties
-    private let url = "https://thesimpsonsquoteapi.glitch.me/quotes?count=10"
-    private var quote: Quote?
-    private var quotes: [Quote] = []
+    private var rickAndMorty: RickAndMorty?
+    private var characters: [Character] = []
     private let spacing: CGFloat = 20
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchData(with: url)
+        fetchData(with: Link.rickAndMortyApi.rawValue)
     }
     
     // MARK: - Navigation
@@ -26,30 +25,30 @@ class MainViewController: UICollectionViewController {
     }
     
     private func fetchData(with url: String?) {
-        NetworkManager.shared.fetchData(from: url) { quotes in
-            self.quotes = quotes
-            self.collectionView.reloadData()
+        NetworkManager.shared.fetchData(from: url) { result in
+            switch result {
+                
+            case .success(let rickAndMorty):
+                self.rickAndMorty = rickAndMorty
+                self.characters = rickAndMorty.results
+                self.collectionView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
         }
     }
     
-//    private func sortedQuotes(with quotes: [Quote]) -> [Quote] {
-//
-//        var quotes: [Quote] = []
-//        var index = 0
-//
-//        }
-    
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        quotes.count
+        characters.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PhotoCell
         
-        let quotes = quotes[indexPath.item]
+        let characters = characters[indexPath.item]
         
-        cell.configure(with: quotes)
+        cell.configure(with: characters)
         
         return cell
     }

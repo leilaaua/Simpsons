@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		728CA9992760B3FC008B6101 /* RickAndMorty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728CA9982760B3FC008B6101 /* RickAndMorty.swift */; };
 		72D9372A2756454700617C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D937292756454700617C48 /* AppDelegate.swift */; };
 		72D9372C2756454700617C48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D9372B2756454700617C48 /* SceneDelegate.swift */; };
 		72D937312756454700617C48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72D9372F2756454700617C48 /* Main.storyboard */; };
@@ -14,12 +15,12 @@
 		72D937362756455100617C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72D937342756455100617C48 /* LaunchScreen.storyboard */; };
 		72D9373E2756493A00617C48 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D9373D2756493A00617C48 /* MainViewController.swift */; };
 		72D9374027564A2E00617C48 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D9373F27564A2E00617C48 /* PhotoCell.swift */; };
-		72D9374427564D4900617C48 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D9374327564D4900617C48 /* Quote.swift */; };
 		72D9374627564E0C00617C48 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D9374527564E0C00617C48 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		72D937262756454700617C48 /* Simpsons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simpsons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		728CA9982760B3FC008B6101 /* RickAndMorty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMorty.swift; sourceTree = "<group>"; };
+		72D937262756454700617C48 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72D937292756454700617C48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72D9372B2756454700617C48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		72D937302756454700617C48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,7 +29,6 @@
 		72D937372756455100617C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72D9373D2756493A00617C48 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		72D9373F27564A2E00617C48 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
-		72D9374327564D4900617C48 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		72D9374527564E0C00617C48 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +54,7 @@
 		72D937272756454700617C48 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				72D937262756454700617C48 /* Simpsons.app */,
+				72D937262756454700617C48 /* RickAndMorty.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,7 +66,7 @@
 				72D9372B2756454700617C48 /* SceneDelegate.swift */,
 				72D9372F2756454700617C48 /* Main.storyboard */,
 				72D9373D2756493A00617C48 /* MainViewController.swift */,
-				72D9374327564D4900617C48 /* Quote.swift */,
+				728CA9982760B3FC008B6101 /* RickAndMorty.swift */,
 				72D9374527564E0C00617C48 /* NetworkManager.swift */,
 				72D9373F27564A2E00617C48 /* PhotoCell.swift */,
 				72D937322756455100617C48 /* Assets.xcassets */,
@@ -79,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		72D937252756454700617C48 /* Simpsons */ = {
+		72D937252756454700617C48 /* RickAndMorty */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 72D9373A2756455100617C48 /* Build configuration list for PBXNativeTarget "Simpsons" */;
+			buildConfigurationList = 72D9373A2756455100617C48 /* Build configuration list for PBXNativeTarget "RickAndMorty" */;
 			buildPhases = (
 				72D937222756454700617C48 /* Sources */,
 				72D937232756454700617C48 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = Simpsons;
+			name = RickAndMorty;
 			productName = Simpsons;
-			productReference = 72D937262756454700617C48 /* Simpsons.app */;
+			productReference = 72D937262756454700617C48 /* RickAndMorty.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 72D937212756454700617C48 /* Build configuration list for PBXProject "Simpsons" */;
+			buildConfigurationList = 72D937212756454700617C48 /* Build configuration list for PBXProject "RickAndMorty" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				72D937252756454700617C48 /* Simpsons */,
+				72D937252756454700617C48 /* RickAndMorty */,
 			);
 		};
 /* End PBXProject section */
@@ -148,10 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				72D9374627564E0C00617C48 /* NetworkManager.swift in Sources */,
+				728CA9992760B3FC008B6101 /* RickAndMorty.swift in Sources */,
 				72D9374027564A2E00617C48 /* PhotoCell.swift in Sources */,
 				72D9373E2756493A00617C48 /* MainViewController.swift in Sources */,
 				72D9372A2756454700617C48 /* AppDelegate.swift in Sources */,
-				72D9374427564D4900617C48 /* Quote.swift in Sources */,
 				72D9372C2756454700617C48 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +303,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Simpsons/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RickAndMorty;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,6 +331,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Simpsons/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RickAndMorty;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -351,7 +353,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		72D937212756454700617C48 /* Build configuration list for PBXProject "Simpsons" */ = {
+		72D937212756454700617C48 /* Build configuration list for PBXProject "RickAndMorty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				72D937382756455100617C48 /* Debug */,
@@ -360,7 +362,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		72D9373A2756455100617C48 /* Build configuration list for PBXNativeTarget "Simpsons" */ = {
+		72D9373A2756455100617C48 /* Build configuration list for PBXNativeTarget "RickAndMorty" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				72D9373B2756455100617C48 /* Debug */,

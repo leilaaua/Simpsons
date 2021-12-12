@@ -11,13 +11,13 @@ class PhotoCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     
-    func configure(with quotes: Quote?) {
+    func configure(with characters: Character?) {
         DispatchQueue.main.async {
-            guard let url = quotes?.image else { return }
+            guard let url = characters?.image else { return }
             guard let imageURl = URL(string: url) else { return }
             guard let imageData = try? Data(contentsOf: imageURl) else { return }
             self.imageView.image = UIImage(data: imageData)
         }
-        
+    
+        }
     }
-}
